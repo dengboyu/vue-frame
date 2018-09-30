@@ -82,7 +82,8 @@ export default{
          */
         setCookie(key,value,time){
             if(time){
-                document.cookie=key+'='+encodeURI(value)+";expires="+time;
+                let expiresTime = new Date(new Date().getTime()+time*1000);
+                document.cookie=key+'='+encodeURI(value)+";expires="+expiresTime.toUTCString();
             }else{
                 document.cookie=key+'='+encodeURI(value);
             }

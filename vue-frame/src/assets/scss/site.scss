@@ -1,0 +1,22 @@
+@import './variables.scss';
+@import './reset.scss';
+@import './mixin.scss';
+@import './elementUI.scss';
+@import './loaders.scss';
+
+body{
+	font-size: 16px;
+	font-family: "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+	.el-input__inner:focus{
+		outline:none!important;
+	}
+	#nprogress .bar {
+      	background: rgb(64, 158, 255); //自定义颜色
+    }
+}
+#app{
+	height: 100%;
+	.tmpl{
+		padding:10px;
+	}
+}
